@@ -100,7 +100,7 @@ const AboutPage = () => {
                 <div className="col-md-4">
                   <div className="text-center">
                     <img 
-                      src="/public/images/profile_pic.jpg"  
+                      src="/images/profile_pic.jpg"  
                       alt="Team Member" 
                       className="img-fluid rounded-circle mb-3"
                       style={{ width: '150px', height: '150px', objectFit: 'cover' }}
@@ -126,7 +126,7 @@ const AboutPage = () => {
                 <div className="col-md-4">
                   <div className="text-center">
                     <img 
-                      src="/public/images/kyoto3.jpg"   
+                      src="/images/kyoto3.jpg"   
                       alt="Team Member" 
                       className="img-fluid rounded-circle mb-3"
                       style={{ width: '150px', height: '150px', objectFit: 'cover' }}
