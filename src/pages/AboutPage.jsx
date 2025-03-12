@@ -126,7 +126,7 @@ const AboutPage = () => {
                 <div className="col-md-4">
                   <div className="text-center">
                     <img 
-                      src="/images/kyoto3.JPG"   
+                      src="/images/kyoto3.JPGroja"   
                       alt="Team Member" 
                       className="img-fluid rounded-circle mb-3"
                       style={{ width: '150px', height: '150px', objectFit: 'cover' }}
