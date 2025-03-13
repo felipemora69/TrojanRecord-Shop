@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       const response = await axios.post("https://trojanrecord-server.onrender.com/auth/login", { email, password });
-      const { token } = response.data;
+      const { token, email } = response.data;
 
       // Save the token and user data to localStorage or context
       localStorage.setItem('token', token);
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await axios.post("https://trojanrecord-server.onrender.com/auth/signup", { email, password });
 
-      const { token } = response.data;
+      const { token, email } = response.data;
 
       // Save the token and user data to localStorage or context
       localStorage.setItem('token', token);

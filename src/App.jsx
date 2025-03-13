@@ -16,6 +16,7 @@ import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import AuthPage from "./pages/AuthPage";
 import AboutPage from "./pages/AboutPage";
+import Profile from "./pages/Profile";
 
 // Create a client
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
               <Route path="/checkout" element={<CheckoutPage />} />
               <Route path="/auth" element={<AuthPage />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/profile" element={<Profile />} />
             </Routes>
           </Layout>
           </BrowserRouter>
