@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }) => {
   // Handle signup
   const signup = async (name, email, password) => {
     try {
-      const response = await axios.post("https://trojanrecord-server.onrender.com/auth/signup", { name, email, password }, { withCredentials: true });
+      const response = await axios.post("auth/signup", { name, email, password }, { withCredentials: true });
 
       const { token } = response.data;
 
