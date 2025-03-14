@@ -19,8 +19,5 @@ export default defineConfig(({ mode }) => ({
     host: "0.0.0.0",
     port: 8090,
     open: true,
-    proxy: {
-      "/auth": "https://trojanrecord-server.onrender.com"
-    }
   },
 }));
