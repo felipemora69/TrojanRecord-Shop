@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 
 // Set your API URL here
-const backendUrl = "http://localhost:5050";
+const backendUrl = "https://trojanrecord-server.onrender.com";
 
 const AuthContext = createContext();
 
