@@ -28,8 +28,6 @@ const AuthPage = () => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
-
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
     
     try {
       if (isLogin) {
@@ -44,7 +42,7 @@ const AuthPage = () => {
           setIsLoading(false);
           return;
         }
-        await signup(name, email, password);  // Pass name for signup
+        await signup(name, email, password);  // Pass user for signup
         toast.success('Account created successfully!');
         navigate('/profile');
       }

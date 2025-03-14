@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 
 // Set your API URL here
-const backendUrl = "https://trojanrecord-server.onrender.com";
+const backendUrl = "http://localhost:5050";
 
 const AuthContext = createContext();
 
@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
   // Handle login
   const login = async (email, password) => {
     try {
-      const response = await axios.post("https://trojanrecord-server.onrender.com/auth/login", { email, password }, { withCredentials: true });
+      const response = await axios.post("https://trojanrecord-server.onrender.com/api/user/login", { email, password }, { withCredentials: true });
       const { token } = response.data;
 
       // Save the token and user data to localStorage or context
@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }) => {
   // Handle signup
   const signup = async (name, email, password) => {
     try {
-      const response = await axios.post("https://trojanrecord-server.onrender.com/auth/signup", { name, email, password }, { withCredentials: true });
+      const response = await axios.post("https://trojanrecord-server.onrender.com/api/user/register", { name, email, password }, { withCredentials: true });
 
       const { token } = response.data;
 
