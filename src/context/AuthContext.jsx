@@ -61,10 +61,15 @@ export const AuthProvider = ({ children }) => {
   };
 
   // Handle logout
-  const logout = () => {
-    setCurrentUser(null);
-    localStorage.removeItem('user');
-    localStorage.removeItem('token');
+  const logout = async () => {
+    try {
+      await axios.post("https://trojanrecord-server.onrender.com/auth/logout", {}, { withCredentials: true });
+      setCurrentUser(null);
+      localStorage.removeItem('user');
+      localStorage.removeItem('token');
+    } catch (error) {
+      throw new Error('Error during logout');
+    }
   };
 
   const value = {
