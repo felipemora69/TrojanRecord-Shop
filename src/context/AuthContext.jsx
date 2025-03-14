@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }) => {
   // Handle signup
   const signup = async (name, email, password) => {
     try {
-      const response = await axios.post("https://trojanrecord-server.onrender.com/auth/signup", { name, email, password }, { withCredentials: false });
+      const response = await axios.post("https://trojanrecord-server.onrender.com/auth/signup", { name, email, password }, { withCredentials: true });
 
       const { token } = response.data;
 
@@ -63,7 +63,7 @@ export const AuthProvider = ({ children }) => {
   // Handle logout
   const logout = async () => {
     try {
-      await axios.post("https://trojanrecord-server.onrender.com/auth/logout", {}, { withCredentials: false });
+      await axios.post("https://trojanrecord-server.onrender.com/auth/logout", {}, { withCredentials: true });
       setCurrentUser(null);
       localStorage.removeItem('user');
       localStorage.removeItem('token');
