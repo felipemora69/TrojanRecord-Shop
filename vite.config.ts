@@ -19,5 +19,8 @@ export default defineConfig(({ mode }) => ({
     host: "0.0.0.0",
     port: 8090,
     open: true,
+    proxy: {
+      "/api": "https://trojan-record-shop.vercel.app/"
+    }
   },
 }));
