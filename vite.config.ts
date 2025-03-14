@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
     port: 8090,
     open: true,
     proxy: {
-      "/api": "https://trojan-record-shop.vercel.app/"
+      "/auth": "https://trojanrecord-server.onrender.com"
     }
   },
 }));
