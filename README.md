@@ -1,4 +1,4 @@
-# Welcome to Trojan Record Shop
+#Trojan Record Shop
 
 Trojan Record Shop is an e-commerce platform that brings the joy of vinyl records to collectors and music enthusiasts worldwide. We are dedicated to providing a premium online shopping experience with a curated selection of vinyl records, from classic albums to modern releases.
 
@@ -15,4 +15,3 @@ This project is built with .
 - React
 - TypeScript
 - Bootstrap and CSS
-- Tailwind CSS
